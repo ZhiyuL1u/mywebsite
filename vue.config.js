@@ -1,7 +1,7 @@
 const WebpackAliyunOssPlugin = require('./oss');
 
 module.exports = {
-    outputDir: 'docs',
+    outputDir: 'dist',
     productionSourceMap: false,
 
     css: {
