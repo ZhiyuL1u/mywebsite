@@ -4,10 +4,10 @@
     <div class="content" id="experience">
         <ModuleHeader :title="experience.header.title" :sub-title="experience.header.subtitle"/>
         <a-timeline >
-            <a-timeline-item data-aos="fade-in" v-for="card in experience.cards" v-bind:key="card.title + card.subtitle">
-                <a-card class="experience-card" :bordered="true" style="width: 100%">
-                    <template slot="title">
-                        <h1 class="title">{{card.title}}</h1>
+            <a-timeline-item color='white'  data-aos="fade-in" v-for="card in experience.cards" v-bind:key="card.title + card.subtitle">
+                <a-card class="experience-card" :bodyStyle="{background:'#1e1f22'}" :bordered="false" style="width: 100%" :headStyle="{background:'#1e1f22'} ">
+                    <template slot="title" style="background: #1e1f22">
+                        <h1 class="title" >{{card.title}}</h1>
                         <span v-if="!!card.subtitle" class="sub-title">{{card.subtitle}}</span>
                     </template>
                     <vue-markdown style="color: #bbbdc2;">{{card.md}}</vue-markdown>
@@ -41,8 +41,16 @@
 
 <style scoped lang="scss">
     @import '../styles/variable';
+    .ant-card >>> .ant-card-head{
+      background: black;
+    }
+
+
 
     .experience-card {
+
+
+
         .title {
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
             color: white;
@@ -50,6 +58,7 @@
             font-size: 1.2rem;
             overflow: scroll;
             margin: 0;
+
         }
 
         .sub-title {
