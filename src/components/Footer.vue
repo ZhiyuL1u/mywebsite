@@ -8,7 +8,7 @@
         <a-col :xs="24" :sm="6" :md="4" :lg="4" :xl="4">
             <a-popover arrowPointAtCenter>
                 <template slot="content"><Badge/></template>
-                <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
+                <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image" style="color: #1e1f22">
                     <img alt="林舍|Maner·Fan" draggable="false" src="../assets/avatar.jpg"/>
                 </span>
             </a-popover>
@@ -42,10 +42,11 @@
 
     .footer {
         &>div{
+
             margin: 1rem auto;
         }
 
-        background: #303030;
+        background: #1e1f22;
 
         .avatar {
             width: 60px;

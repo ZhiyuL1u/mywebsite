@@ -1,7 +1,10 @@
 @import "variable";
 
+
+
+
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-family:'YouSheBiaoTiHei', "Helvetica Neue",-apple-system, BlinkMacSystemFont,  Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -17,14 +20,18 @@
 }
 
 body {
+
   margin: 0;
   padding: 0;
-  background: white;
+  background: #0e0e0e;
 }
 
 .content {
   padding: 2rem;
   text-align: left;
+  background-color: rgb(43, 45, 48); /* 黑色半透明背景 */
+
+
 }
 
 /* 隐藏Layout.Sider (menu) 的按钮，自己实现  */
@@ -33,7 +40,7 @@ body {
 }
 
 .ant-layout, .ant-layout-sider, .ant-layout-content, .ant-layout-header {
-  background: white;
+  background: #2b2d30;
 }
 
 .ant-layout-sider {
@@ -53,12 +60,13 @@ body {
 }
 
 .ant-layout-footer {
-  color: ghostwhite;
-  background: #303030;
+  color: #babacc;
+  background: #1e1f22;
 }
 
 .ant-menu {
-  background: white;
+  margin: 0;
+  background: #2b2d30;
 
   border: none !important;
   text-align: left !important;
@@ -69,12 +77,12 @@ body {
   }
 
   .ant-menu-item {
-    border-bottom: 1px dotted $--color-gray;
+    border-bottom: 2px dotted white;
     background: transparent !important;
-    color: $--color-gray !important;
+    color: white !important;
     .ant-menu-item-selected {
       background: transparent !important;
-      color: $--color-gray !important;
+      color: white !important;
     }
   }
 }
@@ -88,9 +96,10 @@ body {
 }
 
 .color-title {
-  color: $--color-title;
+  color: white;
 }
 
 .color-content {
-  color: $--color-content;
+
+  color: #bbbdc2;
 }

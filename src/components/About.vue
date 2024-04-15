@@ -1,10 +1,10 @@
 <!-- 关于 -->
 
 <template>
-    <div class="content about" id="about">
+    <div class="content about" id="about" >
         <ModuleHeader :title="about.header.title" :sub-title="about.header.subtitle"/>
         <!-- <ModuleSkeleton :display="true" :number="2" /> -->
-        <a-row type="flex" justify="center" align="top">
+        <a-row type="flex" justify="center" align="top" style="background: #1e1f22;padding-top: 20px;padding-bottom: 20px">
             <!-- 头像 -->
             <a-col class="col" :xs="24" :sm="24" :md="24" :lg="10" :xl="8">
                 <img data-aos="fade-in" class="avatar" draggable="false" src="../assets/about/avatar_about.jpg"/>
@@ -16,7 +16,7 @@
                 <!-- 简介 -->
                 <span data-aos="fade-in" class="brief typer black">
                     {{about.content.name}}，
-                    <vue-typer :text="about.content.desc || '林舍'" :type-delay='200' eraseStyle='select-all'></vue-typer>
+                    <vue-typer :text="about.content.desc || 'MATCH_LIU'" :type-delay='200' eraseStyle='select-all'></vue-typer>
                 </span>
                 <!-- 正文 -->
                 <vue-markdown data-aos="fade-in">{{about.content.md}}</vue-markdown>

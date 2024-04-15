@@ -3,13 +3,8 @@
 <template>
     <div class="banner" id="banner">
         <!-- 加载层 -->
-        <div class="bg back"><h1>林小二奋笔疾书...</h1></div>
-        <!-- 脚贴 -->
-        <div class="fork-me">
-            <a class="fork-me-link" href="https://github.com/manerfan/vuesume/wiki" target="_blank">
-                <span class="fork-me-text">Docs On GitHub</span>
-            </a>
-        </div>
+        <div class="bg back"><h1>I'm using muscle power to speed up webpage loading...</h1></div>
+
         <!-- 背景层 -->
         <div data-aos="fade-in" class="bg"></div>
         <!-- 内容层 -->
@@ -18,10 +13,11 @@
                 <img draggable="false" src="../assets/avatar.jpg">
             </span>
             <div>
-                <h1>{{banner.title || '林中'}}</h1>
-                <h3 class="typer white">
-                    鄙人，
-                    <vue-typer :text="banner.desc || '林舍'" :type-delay='200' eraseStyle='select-all'></vue-typer>
+              <h1>{{banner.title}}<span class="second-title-color">{{banner.secondTitle}}</span></h1>
+
+              <h3 class="typer white" style="text-shadow: 0 0 1px #ffffff, 0 0 3px #e5e5e5, 0 0 2px #bdbdbd, 0 0 3px #4682B4;">
+                    I'm
+                    <vue-typer :text="banner.desc || 'Match_liu'" :type-delay='100' eraseStyle='select-all' style="text-shadow: 0 0 1px #ffffff, 0 0 3px #e5e5e5, 0 0 2px #bdbdbd, 0 0 3px #4682B4;"></vue-typer>
                 </h3>
             </div>
         </div>
@@ -94,27 +90,49 @@
             margin-bottom: 20vh;
 
             * {
-                display: block;
+
                 margin: auto;
                 color: $--font-color;
                 text-shadow: 0 0 5px rgba(0, 0, 0, .5);
             }
 
             .avatar {
+              display: block;
                 z-index: -1;
                 width: 160px;
                 height: 160px;
                 line-height: 160px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, .5);
             }
+          .second-title-color {
+            /* 设定渐变背景，从浅亮蓝色渐变到深亮蓝色 */
+            background: linear-gradient(to bottom, #87CEFA, #4682B4); /* 浅天蓝到钢青色 */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent; /* 使文字颜色透明以显示背景渐变 */
+            font-weight: bold; /* 字体加粗 */
+            font-style: italic; /* 斜体 */
+            /* 调整发光效果，减少模糊度 */
+            text-shadow: 0 0 2px #a0d2fa, 0 0 4px #a4dafd, 0 0 2px #6399d0, 0 0 2px #5e8eb9;
+            font-size: 1.5em;
+            display: inline; /* 确保文本内联显示 */
+          }
 
-            h1 {
+
+
+
+
+
+          h1 {
                 font-size: 3em;
-                margin: 3rem auto 1rem;
+                margin: 1rem auto 1rem;
+              font-weight: bold;
+            display: inline;
+            text-shadow: 0 0 2px #ffffff, 0 0 4px #e5e5e5, 0 0 2px #bdbdbd, 0 0 4px #4682B4;
             }
 
             h3 {
-                font-size: 1.5em;
+                font-size: 1.7em;
 
                 .vue-typer {
                     display: inline-block;

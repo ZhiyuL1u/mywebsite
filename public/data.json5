@@ -1,26 +1,26 @@
 {
   // 页面title
-  title: "林舍 - 林中小舍",
+  title: "I'm Match_liu",
   // 社交链接
   social: {
-    github: "https://github.com/manerfan",
-    twitter: "https://twitter.com/manerfan_china",
-    linkedin: "https://www.linkedin.com/in/%E6%B0%B8%E6%B0%B8-%E6%A8%8A-705071104/",
+    github: "https://github.com/ZhiyuL1u",
+    linkedin: "https://www.linkedin.com/in/zhiyu-liu-515208281/",
   },
   // banner页
   banner: {
     anchor: {
       id: "banner",
       icon: "home",
-      name: "首页",
+      name: "Home",
     },
-    title: "林中小舍",
+    title: "Hi, I'm ",
+    secondTitle: "Match",
     desc: [
-      "北方汉子",
-      "宝爸一颗",
-      "码农一枚",
-      "花名林舍",
-      "工作五六载",
+      "a grad student at UPenn",
+      "studying in Computer Science",
+      "also studying in Data Science",
+      "looking for a job",
+      "working on being a better me!!",
     ],
   },
   // 正文
@@ -34,30 +34,27 @@
       anchor: {
         id: "about",
         icon: "user",
-        name: "关于"
+        name: "About"
       },
       header: {
         title: "information",
         subtitle: "about me",
       },
       content: {
-        name: "林舍",
+        name: "Zhiyu Liu",
         desc: [
-          "林中通幽静",
-          "深山藏小舍",
+          "Studying in UPenn",
+          "Major in Cs & Ds",
         ],
-        md: "鄙人林舍，生于河北，纯北方汉子，苦读十二载，后求学于西安~\
-        \n『**厚德、求真、砺学、笃行**』这是母校给予的八字真言，四年本科生涯、三年研究生涯，良师益友收获颇多~\
-        \n求学之际偶遇佳人，毕业之后终成正果，小窝一间、少爷一个，平平淡淡、快快乐乐~\
-        \n前有微波天线、后学电磁黑障，本非科班出身，出于热情投身猿类大军~\
-        \n工作五六载，两域三城奔波，累哉累哉，自知其中快乐~",
+        md: "I am originally from China, now in USA\
+        \nAs a dedicated coder, I aspire to make significant achievements in the field.I began with embedded systems, then moved on to study machine learning.\
+        \nDespite not having a formal background in computer science, driven by sheer passion for development.\
+        \nHaving studied for over five years and traveled between three cities across two domains, it has been an exhausting journey, but I find joy in it.",
       },
       // key - value 数量及内容完全自定义，链接自动识别
       keys: {
-        "主页": "http://cv.manerfan.com",
-        "博客": "http://blog.manerfan.com",
-        "专栏": "http://zhuanlan.manerfan.com",
-        "公众号": "林中小舍"
+        "linkedin": "https://www.linkedin.com/in/zhiyu-liu-515208281/",
+        "github": "https://github.com/ZhiyuL1u",
       },
     },
     // 履历
@@ -66,7 +63,7 @@
       anchor: {
         id: "experience",
         icon: "idcard",
-        name: "经历"
+        name: "Experience"
       },
       header: {
         title: "experience",
@@ -74,51 +71,44 @@
       },
       cards: [
         {
-          title: "阿里巴巴（中国）网络技术有限公司",
-          //subtitle: "2018-08 至 今",
-          md: "<!--**<u>高级开发工程师</u>**-->\
-          \n\
-          \nAli的包容性带来更广的舞台与更大的成长空间，身为Alier，很荣幸能在这样的一家公司共同奋斗、发展",
+          "title": "University of Pennsylvania",
+          "subtitle": "September 2023 to Present",
+          "md": "**<u>Graduate Student</u>**\
+  \n\
+  \n<!--**Major**: Systems Engineering-->\
+  \n\
+  \nThis program offers a wide selection of courses on machine learning, deep learning, and statistics.\
+  \nI took courses related to databases, which were very helpful for my backend database development.\
+  \nI continued to engage with various full-stack frameworks to expand my skill set"
         },
+
+
+
         {
-          title: "海航科技有限公司",
-          //subtitle: "2016-12 至 2018-08",
-          md: "<!--**<u>高级Java工程师</u>**-->\
-          \n\
-          \n海航是将我引向'互联网'的一艘船\
-          \n做为HNAer，很感谢HNA以及各位同仁能够提供这样一个舞台，来接触如此纷繁的、更为'互联网化'的技术，在HNA认识如此之多优秀的同仁尤为庆幸\
-          \n很遗憾HNA的一些变故影响到了很多事情，也带来了很多不愉快"
+          "title": "University of Nottingham Ningbo China",
+          "subtitle": "September 2022 to September 2023",
+          "md": "**<u>Undergraduate GPA (3.8/4)</u>**\
+  \n\
+  \n<!--**Major**: Machine Learning/Software Development-->\
+  \n\
+  \nAlthough my grades are good and I have a keen interest in embedded systems, I ventured into full-stack development and machine learning, dedicating myself to AI research.\
+  \nBuilding on my existing knowledge of C and C++, I learned Java and Python, engaged with frameworks like YOLO, and began studying database technology.\
+  \nOccasionally, I take on full-stack development projects, helping to create mini-programs for a fitness community and Oxford University, and assisting a local hospital with training CV models"
         },
+
+
         {
-          title: "北京数码视讯有限公司",
-          //subtitle: "2013-04 至 2016-12",
-          md: "<!--**<u>技术经理</u>**-->\
-          \n\
-          \n由于专业和课题的原因并未进入'理想'中的体制内，凭借着对coding的一腔热情，一头扎进了猿类大军\
-          \n做为数码人，很感激数码在职场专业化成长上给予的空间",
-        },
-        {
-          title: "西安电子科技大学",
-          subtitle: "2010-09 至 2013-04",
-          md: "**<u>研究生</u>**\
-          \n\
-          \n<!--**专业**：电路与系统-->\
-          \n\
-          \n惧怕过早接触社会选择了读研\
-          \n三年研究生涯对于(课题)研究的 **<u>意义</u>** 有了更深层次的理解\
-          \n由于自己的原因并没有继续读博，虽向往，但无悔",
-        },
-        {
-          title: "西安电子科技大学",
-          subtitle: "2016-09 至 2010-09",
-          md: "**<u>本科生</u>**\
-          \n\
-          \n<!--**专业**：电子信息工程-->\
-          \n\
-          \n第一次背井离乡，站了一个晚上的火车，远赴千里之外求学\
-          \n踏进校园的一刻很激动，第一天晚上心口刺痛的时候就开始想家了\
-          \n四年象牙塔生活很充实，也第一次感受到了四年同寝离别时的伤感之情",
-        },
+          title: "University of Nottingham Ningbo China",
+          subtitle: "September 2019 to September 2022",
+          md: "**<u>Undergraduate</u>**\
+  \n\
+  \n<!--**Major**: Electrical and Automation-->\
+  \n\
+  \nThe first semester focused on establishing a solid foundation in mathematics and physics, mastering linear algebra, matrices, and algorithms\
+  \nIn the second year, I delved into circuit studies, familiarized with various development boards, and mastered various simulation software and coding skills\
+  \nThe third year was mostly spent in the laboratory, completing various embedded projects, and designing and printing PCB boards",
+        }
+
       ],
     },
     // 博客页
@@ -127,11 +117,11 @@
       anchor: {
         id: "blog",
         icon: "profile",
-        name: "博客",
+        name: "Projects",
       },
       header: {
-        title: "blog",
-        subtitle: "latest blog",
+        title: "projects",
+        subtitle: "My projects",
       },
       blog: "https://segmentfault.com/blog/manerfan",
       rss: "https://segmentfault.com/feeds/blog/manerfan",

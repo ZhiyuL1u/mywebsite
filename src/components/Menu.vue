@@ -7,7 +7,7 @@
             <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
                 <img draggable="false" src="../assets/avatar.jpg">
             </span>
-            <span>{{banner.name|| '林中小舍'}}</span>
+            <span>{{banner.name|| 'Match_liu'}}</span>
         </div>
         <!-- 菜单 -->
         <a-layout-content class="menu">
@@ -23,7 +23,7 @@
         <a-layout-footer class="footer">
             <!-- 社交 -->
             <a-row type="flex" justify="center" align="middle" :gutter="2">
-                <a-col span="24"><Social color="rgb(136,136,136)" :size="1.2"/></a-col>
+                <a-col span="24"><Social color="rgb(200,200,200)" :size="1.2"/></a-col>
             </a-row>
             <!-- 版权 -->
             <a-row type="flex" justify="center" align="middle" :gutter="2">
@@ -64,7 +64,7 @@
         text-align: center;
 
         .header, .menu, .footer {
-            background-color: white !important;
+            background-color: #2b2d30 !important;
         }
 
         .header {
@@ -77,19 +77,23 @@
             span {
                 display: block;
                 margin-top: .5rem;
-                font-size: 1.2em;
-                font-weight: 500;
-                color: $--color-gray;
+                font-size: 1.4em;
+              font-weight: 700; /* 增加字体的粗细 */
+              color: white; /* 设置字体颜色为白色 */
+              text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* 添加白色光晕效果 */
+
             }
         }
 
         .menu {
             * {
                 font-size: 1em;
+
             }
 
             a {
                 display: inline;
+
             }
         }
 

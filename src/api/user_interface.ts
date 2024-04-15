@@ -28,7 +28,6 @@ export interface UserData {
  */
 export interface Social {
     github?: string;
-    twitter?: string;
     linkedin?: string;
 
     // 其他

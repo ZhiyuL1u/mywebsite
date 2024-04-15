@@ -113,8 +113,9 @@
         }
 
         .layout-sider {
-            box-shadow: 1px 0 5px #e0e0e0;
+            box-shadow: 0px 0 10px #1e1f22;
             z-index: 999;
+            border-right: 2px solid #1e1f22;
         }
     }
 </style>

@@ -3,14 +3,14 @@
 <template>
     <div class="content" id="experience">
         <ModuleHeader :title="experience.header.title" :sub-title="experience.header.subtitle"/>
-        <a-timeline>
+        <a-timeline >
             <a-timeline-item data-aos="fade-in" v-for="card in experience.cards" v-bind:key="card.title + card.subtitle">
                 <a-card class="experience-card" :bordered="true" style="width: 100%">
                     <template slot="title">
                         <h1 class="title">{{card.title}}</h1>
                         <span v-if="!!card.subtitle" class="sub-title">{{card.subtitle}}</span>
                     </template>
-                    <vue-markdown>{{card.md}}</vue-markdown>
+                    <vue-markdown style="color: #bbbdc2;">{{card.md}}</vue-markdown>
                 </a-card>
             </a-timeline-item>
         </a-timeline>
@@ -44,15 +44,19 @@
 
     .experience-card {
         .title {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+            color: white;
             width: 100%;
-            font-size: 1rem;
+            font-size: 1.2rem;
             overflow: scroll;
             margin: 0;
         }
 
         .sub-title {
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+            color: white;
             width: 100%;
-            font-size: .5rem;
+            font-size: .8rem;
             display: block;
             margin-top: .5rem;
         }
