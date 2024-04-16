@@ -112,6 +112,9 @@
       ],
     },
     // 博客页
+
+
+
     {
       display: true,
       anchor: {
@@ -123,8 +126,23 @@
         title: "projects",
         subtitle: "My projects",
       },
-      blog: "https://segmentfault.com/blog/manerfan",
-      rss: "https://segmentfault.com/feeds/blog/manerfan",
+      cards: [
+        {
+          keys: {
+            "github": "https://github.com/lyuanzhi/AllWhale?tab=readme-ov-file",
+          },
+          "title": "AllWhale",
+          "subtitle": "Tech Stack: Front-end(Js Uni-app (based on vue)) Back-end(Java, SpringBoot, Maven, MyBatis, WebSocket, MySQL, Redis, Apache Tomcat)",
+          "img": "allwhale.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nA WeChat mini program that combines on-campus forum, second-hand platform, and more. This project was completed in 2022.\
+  \nWe decided to develop a WeChat Mini Program featured in on-campus online forum and second-hand trading platform, and named it AllWhale (originally oxcean).\
+  \nThe reason for using WeChat Mini Program was that we wanted to popularize WeChat in Oxford.\
+  \nThe WeChat Mini Program Account: ```AllWhaleLYZ```.\
+  \nThe server IP address: ```34.41.117.214```"
+        }],
     },
   ],
 }

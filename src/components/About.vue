@@ -25,8 +25,7 @@
                     <a-col class="keys-col" v-for="(value, name) in about.keys" v-bind:key="name"
                            :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
                         <span class="key">{{name}}:</span>
-                        <a class="value" v-if="isUrl(value)" :href="value" target="_blank">{{value | simplifyUrl}}</a>
-                        <span v-else>{{value}}</span>
+                        <a class="value"  :href="value" target="_blank">{{value | simplifyUrl}}</a>
                     </a-col>
                 </a-row>
             </a-col>

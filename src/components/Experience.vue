@@ -6,10 +6,10 @@
         <a-timeline >
             <a-timeline-item color='white'  data-aos="fade-in" v-for="card in experience.cards" v-bind:key="card.title + card.subtitle">
                 <a-card class="experience-card" :bodyStyle="{background:'#1e1f22'}" :bordered="false" style="width: 100%" :headStyle="{background:'#1e1f22'} ">
-                    <template slot="title" style="background: #1e1f22">
+
                         <h1 class="title" >{{card.title}}</h1>
                         <span v-if="!!card.subtitle" class="sub-title">{{card.subtitle}}</span>
-                    </template>
+
                     <vue-markdown style="color: #bbbdc2;">{{card.md}}</vue-markdown>
                 </a-card>
             </a-timeline-item>
@@ -52,6 +52,7 @@
 
 
         .title {
+          word-break: break-all;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
             color: white;
             width: 100%;
@@ -62,6 +63,7 @@
         }
 
         .sub-title {
+          word-break: break-all;
           text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
             color: white;
             width: 100%;
