@@ -145,6 +145,24 @@
         },
         {
           keys: {
+            "preview Pdf":"https://drive.google.com/file/d/1paJ2T9YXG6vjIQYR-rI9u8RQcEx-QSe6/view",
+            "github": "xxx",
+          },
+          "title": "IMAGE-DESCRIPTION AI: BRIDGING VISION AND LANGUAGE WITH DEEP",
+          "subtitle": "Research Interests: Machine Learning & Deep Learning, Convolutional Neural Networks(CNNs), NLP(Transformer), python ,pytorch",
+          "img": "IMAGE-DESCRIPTION_AI.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nThis project aims to develop an AI system focused on interpreting images through the application of deep learning technologies, primarily Convolutional Neural Networks (CNNs) and Transformers.\
+  \nThe aim is to create a tool capable of processing and describing visual information, which could have practical implications in several areas such as aiding the visually impaired,\
+  \nimproving recommendation systems, and facilitating the integration of Computer Vision (CV) and Natural Language Processing (NLP). Initial results have shown promising performance,\
+  \nwith the model vividly and accurately describing the contents of images in test datasets, which highlights the feasibility of deploying this method in practical applications.\
+          \nProvide a pdf of the paper, and code that can be reproduced"
+
+        },
+        {
+          keys: {
             "preview":"https://spotify-themed-web.zhiyuliu.com",
             "github": "https://github.com/ZhiyuL1u/Spotify-themed_web",
           },
