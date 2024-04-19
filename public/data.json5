@@ -146,7 +146,7 @@
         {
           keys: {
             "preview Pdf":"https://drive.google.com/file/d/1paJ2T9YXG6vjIQYR-rI9u8RQcEx-QSe6/view",
-            "github": "xxx",
+            "github": "https://github.com/ZhiyuL1u/IMAGE-DESCRIPTION-AI-BRIDGING-VISION-AND-LANGUAGE-WITH-DEEP",
           },
           "title": "IMAGE-DESCRIPTION AI: BRIDGING VISION AND LANGUAGE WITH DEEP",
           "subtitle": "Research Interests: Machine Learning & Deep Learning, Convolutional Neural Networks(CNNs), NLP(Transformer), python ,pytorch",
