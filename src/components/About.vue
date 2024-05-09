@@ -116,9 +116,9 @@
 
         @media screen and (max-width: $--screen-md-min) {
             .col {
-                padding: 0;
+                //padding: 0;
                 &.color-content {
-                    margin-top: 1.5rem;
+                    //margin-top: 1.5rem;
                 }
             }
         }
