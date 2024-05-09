@@ -129,10 +129,29 @@
       cards: [
         {
           keys: {
+            "preview":"https://pennguys.com",
+            "preview(admin page)":"https://admin.pennguys.com",
+            "github(FrontEnd only)": "https://github.com/ZhiyuL1u/myblog_frontend",
+          },
+          "title": "Pennguys: Knowledge Exchange Blog",
+          "subtitle": "Tech Stack: Front-end(Js vue ElementUI) Back-end(Java, SpringBoot, MyBatisPlus, EasyExcel, Echarts) deployments(MySQL, Redis, docker, nginx, Google cloud)",
+          "img": "pennguys.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nThis website features two main interfaces: a blog display page and an admin management page (access requires approval).\
+  \nThe primary function is to share problems encountered in my studies and daily life. The display page includes a complete login system and integrates Redis to update view counts in real-time.\
+  \nEach blog post supports comments. Users also have their own user center where they can modify their attributes.\
+  \nOn the management page, users can publish posts, save and modify them multiple times, and control user permissions.\
+          \nThere are many valuable blogs on the site!"
+
+        },
+        {
+          keys: {
             "github": "https://github.com/lyuanzhi/AllWhale?tab=readme-ov-file",
           },
           "title": "AllWhale",
-          "subtitle": "Tech Stack: Front-end(Js Uni-app (based on vue)) Back-end(Java, SpringBoot, Maven, MyBatis, WebSocket, MySQL, Redis, Apache Tomcat)",
+          "subtitle": "Tech Stack: Front-end(Js Uni-app (based on vue)) Back-end(Java, SpringBoot, Maven, MyBatis, WebSocket, MySQL, Apache Tomcat)",
           "img": "allwhale.png",
           "md": "**<u>Description:</u>**\
   \n\
@@ -167,7 +186,7 @@
             "github": "https://github.com/ZhiyuL1u/Spotify-themed_web",
           },
           "title": "Spotify-themed-web",
-          "subtitle": "Tech Stack: Front-end(Js react) Back-end(Node.js Mysql)",
+          "subtitle": "Tech Stack: Front-end(Js, react) Back-end(Node.js) deployment(docker, Mysql, nginx, pm2, Google cloud)",
           "img": "spotify-themed-web.png",
           "md": "**<u>Description:</u>**\
   \n\
