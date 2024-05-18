@@ -129,12 +129,30 @@
       cards: [
         {
           keys: {
+            "preview":"https://divebi.com",
+            "github": "https://github.com/ZhiyuL1u/diveBi",
+          },
+          "title": "DiveBI(AIGC-based Business Intelligence platform)",
+          "subtitle": "Tech Stack: Front-end(React, Ant Design Pro, Easy Excel) Back-end(Java, SpringBoot, MyBatisPlus,Thread Pool, RabbitMQ, Redisson RateLimiter) deployments(OpenAI API, MySQL, Redis, docker, nginx, Google cloud)",
+          "img": "divebi.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nThis site uses the openai interface (the latest gpt4o) to cater for users uploading excel chart analyses.\
+  \nDistributed Rate Limiting - Limit single-user access frequency to prevent malicious use of system resources.\
+  \nAsynchronous - Implement asynchronous AIGC using a custom I/O-intensive thread pool and task queue.\
+  \nDistributed Message Queue - Use RabbitMQ to receive and persist task messages, forwarding them through a Direct exchange to a decoupled AI generation module for task processing. \
+          \nAdditionally, a dead-letter queue is created to handle tasks with AI Generation Error, enhancing system reliability."
+
+        },
+        {
+          keys: {
             "preview":"https://pennguys.com",
             "preview(admin page)":"https://admin.pennguys.com",
             "github(FrontEnd only)": "https://github.com/ZhiyuL1u/myblog_frontend",
           },
           "title": "Pennguys: Knowledge Exchange Blog",
-          "subtitle": "Tech Stack: Front-end(Js vue ElementUI) Back-end(Java, SpringBoot, MyBatisPlus, EasyExcel, Echarts) deployments(MySQL, Redis, docker, nginx, Google cloud)",
+          "subtitle": "Tech Stack: Front-end(Js, vue, ElementUI ,EasyExcel, Echarts) Back-end(Java, SpringBoot, MyBatisPlus) deployments(MySQL, Redis, docker, nginx, Google cloud)",
           "img": "pennguys.png",
           "md": "**<u>Description:</u>**\
   \n\
@@ -178,6 +196,22 @@
   \nimproving recommendation systems, and facilitating the integration of Computer Vision (CV) and Natural Language Processing (NLP). Initial results have shown promising performance,\
   \nwith the model vividly and accurately describing the contents of images in test datasets, which highlights the feasibility of deploying this method in practical applications.\
           \nProvide a pdf of the paper, and code that can be reproduced"
+
+        },
+        {
+          keys: {
+            "preview":"https://www.linkedin.com/in/zhiyu-liu-515208281/details/projects/",
+          },
+          "title": "Training Appropriate Dress Test for Healthcare Professionals",
+          "subtitle": "Research Interests: Machine Learning & Deep Learning, Yolo v3, Python",
+          "img": "health.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nA dataset of healthcare workers' clothing is collected and processed, and the corresponding model is trained using yolo.\
+  \nThe model is used to assess the standard of dress and is commercially available in hospitals.Where due to the small sample, data enhancement was used to save on filming costs.\
+  \nDue to the actual deployment environment limiting the yolo version, using a higher version can have better results.\
+          \nCannot provide the code..."
 
         },
         {
