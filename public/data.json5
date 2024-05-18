@@ -200,6 +200,23 @@
         },
         {
           keys: {
+            "preview":"https://spotify-themed-web.zhiyuliu.com",
+            "github": "https://github.com/ZhiyuL1u/Spotify-themed_web",
+          },
+          "title": "Spotify-themed-web",
+          "subtitle": "Tech Stack: Front-end(Js, react) Back-end(Node.js) deployment(docker, Mysql, nginx, pm2, Google cloud)",
+          "img": "spotify-themed-web.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nI built an interactive Spotify-themed web application using React and Node.js backed by a MySQL RDS database\
+  \nThe site was connected to my AWS mysql database, which stored information about each of Taylor's songs and playlists.\
+  \nI separated the back-end of the project and deployed it on different servers. The back-end used mp2 for continuous deployment of the node project\
+  \nThe project realizes the functions of paging query and data analysis."
+
+        },
+        {
+          keys: {
             "preview":"https://www.linkedin.com/in/zhiyu-liu-515208281/details/projects/",
           },
           "title": "Training Appropriate Dress Test for Healthcare Professionals",
@@ -216,19 +233,31 @@
         },
         {
           keys: {
-            "preview":"https://spotify-themed-web.zhiyuliu.com",
-            "github": "https://github.com/ZhiyuL1u/Spotify-themed_web",
+            "pdf preview":"https://drive.google.com/file/d/18lyaep4CFfpEpIqj37xs1zzSgf7CGYGY/view?usp=sharing",
           },
-          "title": "Spotify-themed-web",
-          "subtitle": "Tech Stack: Front-end(Js, react) Back-end(Node.js) deployment(docker, Mysql, nginx, pm2, Google cloud)",
-          "img": "spotify-themed-web.png",
+          "title": "Indoor Position Using Ubisense Ultrasonic Sensors",
+          "subtitle": "Research Interests: Machine Learning & Deep Learning, Reinforcement Learning",
+          "img": "indoor.png",
           "md": "**<u>Description:</u>**\
   \n\
   \n\
-  \nI built an interactive Spotify-themed web application using React and Node.js backed by a MySQL RDS database\
-  \nThe site was connected to my AWS mysql database, which stored information about each of Taylor's songs and playlists.\
-  \nI separated the back-end of the project and deployed it on different servers. The back-end used mp2 for continuous deployment of the node project\
-  \nThe project realizes the functions of paging query and data analysis."
+  \nDeveloped a simulation environment for indoor positioning in Python, preliminarily verified relevant algorithms, and collected pertinent training data sets.\
+  \nProposed intelligent indoor positioning algorithms to minimize positioning errors, detect NLOS, and save energy by disabling several sensors based on machine learning algorithms, i.e., LSTM neural networks, reinforcement learning, Double DQN, etc.\
+          \nknow more to see the PDF"
+
+        },
+        {
+          keys: {
+          },
+          "title": "Vehicle Autonomy: Image & Sign Recognition with Speed Monitoring",
+          "subtitle": "Embedded (c/c++, Arduino, STM32, Raspberry) Simulation software (Matlab KiCad, PLECS, LTspice, ADS, Verilog)",
+          "img": "vehicle.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nControlled the vehicle based on Raspberry Pi, implemented algorithms like PID to achieve automatic line following and developed an image recognition algorithm with OpenCV in c++.\
+  \nEngineered and assembled vehicles using Raspberry Pi and Arduino platforms. Implemented algorithms such as PID and leveraged CNN models for automatic line following through various color and pixel processing techniques.\
+          \nUtilized OpenCV to develop algorithms for real-time recognition of road signs and other images from camera stream. Integrated a pre-trained deep learning face recognition model, enabling the vehicle to identify various faces."
 
         }],
     },
