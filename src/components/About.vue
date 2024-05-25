@@ -125,9 +125,9 @@
 
         .keys-row {
             margin: 1rem auto;
-
             .keys-col {
-                margin: .5rem auto;
+
+  margin: .5rem auto;
                 word-break: break-all;
                 padding-right: 1rem;
 

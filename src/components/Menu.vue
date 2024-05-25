@@ -17,7 +17,12 @@
                     <a-icon :type="m.icon" />
                     <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name}}</a>
                 </a-menu-item>
+              <a-menu-item key="extra">
+                <a-icon type="read" />
+                <a href="https://docs.google.com/document/d/1RFeWWVAKeMMWVPq2cO2tF8GpTyIL0-jy/edit?usp=sharing&ouid=111177539978422759112&rtpof=true&sd=true" target="_blank">Resume</a>
+              </a-menu-item>
             </a-menu>
+
         </a-layout-content>
         <!-- 菜单页脚 -->
         <a-layout-footer class="footer">
