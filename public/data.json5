@@ -115,7 +115,6 @@
     // 博客页
 
 
-
     {
       display: true,
       anchor: {
@@ -180,6 +179,19 @@
   \nThe reason for using WeChat Mini Program was that we wanted to popularize WeChat in Oxford.\
   \nThe WeChat Mini Program Account: ```AllWhaleLYZ```.\
   \nThe server IP address: ```34.41.117.214```"
+        },
+        {
+          keys: {
+            "github": "https://github.com/ZhiyuL1u/Twitrade",
+          },
+          "title": "Twitrade:",
+          "subtitle": "Tech Stack: Front-end(React.js) Back-end(spring Boot, mybaits, Swagger2, Mysql) Data analysis(Pandas, NumPy, NLP)",
+          "img": "twitrade.png",
+          "md": "**<u>Description:</u>**\
+  \n\
+  \n\
+  \nOur primary objective is to develop a comprehensive tool that provides insights into how social media activities around top technology companies influence their stock market performance.\
+  \n By examining likes, comments, and retweets, we aim to uncover trends and patterns that could suggest a relationship between social media sentiment and stock market movements."
         },
         {
           keys: {
