@@ -46,3 +46,7 @@ Play at https://www.zhiyuliu.com/niogame/ (the existing domain configuration may
 To update the game, rebuild the game project and replace `public/niogame/index.html` with its latest standalone HTML, retaining the deployed home link to `/`. Commit and push to the connected production branch to trigger Netlify. Changes in the separate local game folder do not automatically sync to this repository.
 
 Upstream: https://github.com/Ayi1337/gpt6-astra-one-shot-games. The game is an independent remaster, not an official NIO product. Vehicle imagery and trademarks remain with their owners; source URLs are recorded in `public/niogame/asset-sources.json`.
+
+### Game update: 2026-09-09
+
+Nine official vehicle levels now lead to a tenth, AI-generated William Li cartoon portrait: ES9 + ES9 → William Li. Car height is increased by 25%, with floor friction 0.85 and vehicle friction 0.65. Merges require 0.4 seconds of low-speed continuous contact; new bodies become eligible at 0.45 seconds. Generation provenance is recorded with the asset sources.

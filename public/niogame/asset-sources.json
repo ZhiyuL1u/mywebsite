@@ -306,5 +306,14 @@
       }
     ],
     "retrievedAt": "2026-09-08"
+  },
+  "libin-generation.json": {
+    "asset": "libin.png",
+    "subject": "李斌 / William Li",
+    "type": "AI-generated cartoon portrait for an independent fan game",
+    "tool": "Built-in image_gen",
+    "generatedAt": "2026-09-09",
+    "prompt": "Use case: stylized-concept. Asset type: final unlock sprite for an independent NIO vehicle merging browser game. Create one polished, friendly cartoon bust portrait of William Li (Li Bin / 李斌), the NIO founder. Recognizable middle-aged Chinese man with short neatly side-parted black hair, slightly broad oval face, gentle smiling eyes, approachable smile, no glasses, wearing a simple navy blazer over a white crew-neck shirt. Tasteful caricature with a slightly oversized head, clean dark outlines, softly shaded 2D illustration, refined playful game art. Front facing head and shoulders, entire hair and shoulders in frame, compact silhouette, transparent background with a genuine alpha channel. Centered, generous transparent margin, square canvas. No words, no logo, no badge, no circle, no scenery, no watermark. This is a humorous friendly independent fan-game portrait, not a photo or official endorsement.",
+    "source": "Generated for this project, not an official NIO image; existing vehicle photos remain official assets."
   }
 }

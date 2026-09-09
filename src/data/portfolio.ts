@@ -87,9 +87,9 @@ export const projects: Project[] = [
     technologies: ['JavaScript', 'Canvas 2D', 'Verlet physics', 'Web Audio'],
     details: [
       'Remastered the open-source melon-lab game from Ayi1337/gpt6-astra-one-shot-games, retaining its soft-body physics while introducing car-shaped collision outlines.',
-      'Designed a nine-level progression from firefly through ONVO to NIO, with increasing vehicle sizes, distinct official paint colors, and sustained-contact merging.',
-      'Added placement and merge sounds, a battery-swap assist, three physics modes, and mouse, keyboard, and touch controls.',
-      'Runs entirely in the browser with locally bundled assets. This is an independent project, not an official NIO game; vehicle imagery and trademarks belong to their respective owners.',
+      'Designed nine vehicle levels from firefly through ONVO to NIO, followed by a cartoon portrait of William Li as the final merge reward.',
+      'Tuned taller car-shaped bodies and contact friction for more stable stacks, with a 0.4-second low-speed merge delay. Includes placement and merge sounds, battery-swap assistance, three physics modes, and mouse, keyboard, and touch controls.',
+      'Runs entirely in the browser with locally bundled official vehicle imagery and an AI-generated cartoon portrait. This is an independent project, not an official NIO game; vehicle imagery and trademarks belong to their respective owners.',
     ],
     links: [{label: 'Play game', url: '/niogame/'}, {label: 'Upstream project', url: 'https://github.com/Ayi1337/gpt6-astra-one-shot-games'}],
   },
