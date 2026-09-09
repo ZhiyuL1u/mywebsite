@@ -19,14 +19,14 @@ try {
     return state;
   };
   const html = await renderToString(createSSRApp(Deck, {projects, onOpen: project => opened.push(project.id)}));
-  assert.equal((html.match(/class="project-card/g) || []).length, 9);
+  assert.equal((html.match(/class="project-card/g) || []).length, projects.length);
   const layers = [...html.matchAll(/class="([^"]*deck-layer[^"]*)"/g)].map(match => match[1].split(/\s+/));
   assert.equal(layers.filter(classes => classes.includes('is-front')).length, 1);
-  assert.equal(layers.filter(classes => classes.includes('is-distant')).length, 4);
+  assert.equal(layers.filter(classes => classes.includes('is-distant')).length, 5);
   assert(html.includes('aria-roledescription="carousel"'));
   assert(html.includes('Bring Pennguys to the front'));
   assert.equal(state.activeProject.value.id, projects[0].id);
-  assert.deepEqual(state.cards.value.map(card => card.offset), [0, 1, 2, 3, 4, -4, -3, -2, -1]);
+  assert.deepEqual(state.cards.value.map(card => card.offset), [0, 1, 2, 3, 4, 5, -4, -3, -2, -1]);
 
   const capturedPointers = new Set();
   let focusCount = 0;
@@ -39,7 +39,7 @@ try {
   };
   state.stage.value = fakeStage;
   state.navigate(-1);
-  assert.equal(state.activeIndex.value, 8);
+  assert.equal(state.activeIndex.value, projects.length - 1);
   state.navigate(1);
   assert.equal(state.activeIndex.value, 0);
   await state.selectProject(4, true);
@@ -55,7 +55,7 @@ try {
   state.onKeydown(key('Home'));
   assert.equal(state.activeIndex.value, 0);
   state.onKeydown(key('End'));
-  assert.equal(state.activeIndex.value, 8);
+  assert.equal(state.activeIndex.value, projects.length - 1);
   state.onKeydown(key('ArrowRight'));
   assert.equal(state.activeIndex.value, 0);
   state.onKeydown(key('Enter'));
@@ -109,8 +109,12 @@ try {
   await state.selectProject(0);
   input.projects = projects.filter(project => project.category === 'AI & data');
   await nextTick();
-  assert.equal(state.activeProject.value.id, projects[0].id);
+  assert.equal(state.activeProject.value.id, 'divebi');
   assert.equal(state.cards.value.length, 5);
+  input.projects = projects.filter(project => project.category === 'Interactive');
+  await nextTick();
+  assert.equal(state.activeProject.value.id, 'nio-vehicle-lab');
+  assert.equal(state.activeProject.value.links[0].url, '/niogame/');
   input.projects = projects.filter(project => project.category === 'Embedded');
   await nextTick();
   assert.equal(state.activeProject.value.id, 'vehicle-autonomy');
@@ -130,7 +134,7 @@ try {
   assert(css.includes('touch-action: pan-y pinch-zoom'));
   assert(css.includes('@media (prefers-reduced-motion: reduce)'));
   assert(css.includes('@media (max-width: 760px)'));
-  console.log('PASS: 9 project cards, circular navigation, keyboard opening, swipe suppression, vertical scroll, cancelation, filters, empty/single states, reduced-motion tilt, and responsive CSS hooks.');
+  console.log('PASS: 10 project cards, circular navigation, keyboard opening, swipe suppression, vertical scroll, cancelation, filters, empty/single states, reduced-motion tilt, and responsive CSS hooks.');
 } finally {
   await server.close();
 }

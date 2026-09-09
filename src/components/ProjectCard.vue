@@ -13,7 +13,7 @@ function openFromSurface(event: MouseEvent) {
 <template>
   <article class="project-card" :class="{'project-featured': featured}" :aria-labelledby="'project-' + project.id" @click="openFromSurface">
     <button class="project-image" type="button" :aria-label="'View details of ' + project.title" @click="$emit('open')">
-      <img :src="project.image" :alt="project.title + ' project screenshot'" loading="lazy" decoding="async" />
+      <img :src="project.image" :alt="project.title + ' project preview'" loading="lazy" decoding="async" />
       <span class="project-image-hint" aria-hidden="true">Explore project ↗</span>
     </button>
     <div class="project-info">

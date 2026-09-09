@@ -1,6 +1,6 @@
 # Zhiyu Liu · Personal Portfolio
 
-Personal portfolio website for Zhiyu Liu, built with Vue 3, TypeScript, Vite, and Three.js. Includes an interactive geometry scene, personal introduction, nine projects with detailed notes, education, and contact links.
+Personal portfolio website for Zhiyu Liu, built with Vue 3, TypeScript, Vite, and Three.js. Includes an interactive geometry scene, personal introduction, ten projects with detailed notes, education, and contact links.
 
 ## Development
 
@@ -38,3 +38,11 @@ Projects appear in a perspective card stack. Drag horizontally, use the previous
 This project includes code derived from the Vuesume template. Its MIT license is retained in [LICENSE](LICENSE).
 
 Typography uses self-hosted JetBrains Mono throughout: Regular (400) for body copy and Medium (500) for headings and controls. The WOFF2 files come from the font archive already included in the project. Shared font, size, and weight tokens are defined in `src/styles/main.css`; the SIL Open Font License is included in `public/fonts/OFL-JetBrainsMono.txt`. The previously tested Manrope asset is retained but is no longer loaded; its license remains alongside it.
+
+## NIO Vehicle Lab
+
+Play at https://www.zhiyuliu.com/niogame/ (the existing domain configuration may redirect to https://zhiyuliu.com/niogame/). The standalone game is committed at `public/niogame/index.html`; Vite copies it to `dist/niogame/index.html`. Netlify serves this existing static directory automatically, so no additional DNS, site, or redirect configuration is required. The portfolio entry is in `src/data/portfolio.ts`.
+
+To update the game, rebuild the game project and replace `public/niogame/index.html` with its latest standalone HTML, retaining the deployed home link to `/`. Commit and push to the connected production branch to trigger Netlify. Changes in the separate local game folder do not automatically sync to this repository.
+
+Upstream: https://github.com/Ayi1337/gpt6-astra-one-shot-games. The game is an independent remaster, not an official NIO product. Vehicle imagery and trademarks remain with their owners; source URLs are recorded in `public/niogame/asset-sources.json`.

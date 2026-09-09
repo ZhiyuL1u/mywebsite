@@ -1,0 +1,310 @@
+{
+  "sources.json": {
+    "sourcePage": "https://www.nio.com/",
+    "assets": [
+      {
+        "model": "ES8",
+        "sourcePage": "https://www.nio.com/",
+        "modelPage": "https://www.nio.com/es8",
+        "url": "https://cdn-public.nio.com/www-nio-cn/admin-file-upload/2/2026-06-26/828282/Mask-group.png",
+        "originalDimensions": [
+          2280,
+          880
+        ],
+        "dimensions": [
+          2265,
+          814
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cropBox": [
+          15,
+          36,
+          2280,
+          850
+        ],
+        "optimizedDimensions": [
+          1200,
+          431
+        ],
+        "optimizedBytes": 61554,
+        "localFile": "es8.webp"
+      },
+      {
+        "model": "ES9",
+        "sourcePage": "https://www.nio.com/",
+        "modelPage": "https://www.nio.com/es9",
+        "url": "https://cdn-public.nio.com/www-nio-cn/admin-file-upload/2/2026-05-08/19460c/es9-desktop.png",
+        "originalDimensions": [
+          2280,
+          880
+        ],
+        "dimensions": [
+          2174,
+          831
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cropBox": [
+          74,
+          47,
+          2248,
+          878
+        ],
+        "optimizedDimensions": [
+          1200,
+          459
+        ],
+        "optimizedBytes": 65862,
+        "localFile": "es9.webp"
+      },
+      {
+        "model": "ET5",
+        "sourcePage": "https://www.nio.cn/et5",
+        "modelPage": "https://www.nio.com/et5",
+        "url": "https://cdn-public.nio.com/www-nio-cn/yi-chu-ji-fa-yi-wang-wu-qian/et5-2025/exterior/carousel-color-03-desktop.jpg",
+        "originalDimensions": [
+          2560,
+          1281
+        ],
+        "optimizedDimensions": [
+          1246,
+          408
+        ],
+        "optimizedBytes": 52990,
+        "localFile": "et5.webp",
+        "previousImageUrl": "https://cdn-public.nio.com/www-nio-cn/cms/zh_CN/page_new_homepage/1748155909545-1748155908238-5F2840021DD50F71.png",
+        "paintName": "镜空粉",
+        "paintSourceLocation": "Official product __NEXT_DATA__ exterior carousel image title and alt",
+        "originalFormat": "JPEG",
+        "originalTransparent": false,
+        "processing": [
+          "Official paint image downloaded from product page JSON.",
+          "Aspect-preserving resize and non-generative GrabCut alpha masking with manually traced car outline and wheel-edge trimming.",
+          "RGB paint appearance retained; no recoloring or generated content."
+        ],
+        "limitations": "Official image has a studio background; minor edge remnants may remain after faithful alpha masking."
+      },
+      {
+        "model": "ES6",
+        "sourcePage": "https://www.nio.cn/es6",
+        "modelPage": "https://www.nio.com/es6",
+        "url": "https://cdn-public.nio.com/www-nio-cn/sheng-ji-ang-ran-ling-gan-ji-fa/es6-2025/exterior/color-05-desktop.jpg",
+        "originalDimensions": [
+          2560,
+          1280
+        ],
+        "optimizedDimensions": [
+          1264,
+          464
+        ],
+        "optimizedBytes": 70812,
+        "localFile": "es6.webp",
+        "previousImageUrl": "https://cdn-public-stg.nio.com/www-nio-cn/cms/zh_CN/page_new_homepage/1747286713643-1747286712662-64DF7868C5369858.png",
+        "paintName": "同温层蓝",
+        "paintSourceLocation": "Official product __NEXT_DATA__ exterior carousel image title and alt",
+        "originalFormat": "JPEG",
+        "originalTransparent": false,
+        "processing": [
+          "Official paint image downloaded from product page JSON.",
+          "Aspect-preserving resize and non-generative GrabCut alpha masking with manually traced car outline and wheel-edge trimming.",
+          "RGB paint appearance retained; no recoloring or generated content."
+        ],
+        "limitations": "Official image has a studio background; minor edge remnants may remain after faithful alpha masking."
+      },
+      {
+        "model": "ET9",
+        "sourcePage": "https://www.nio.com/",
+        "modelPage": "https://www.nio.com/et9",
+        "url": "https://cdn-public.nio.com/www-nio-cn/cms/zh_CN/page_new_homepage/1734749653128-1734749649935-17D67309E47DD6B8.png",
+        "originalDimensions": [
+          3420,
+          1320
+        ],
+        "dimensions": [
+          3362,
+          1048
+        ],
+        "mode": "P",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cropBox": [
+          58,
+          189,
+          3420,
+          1237
+        ],
+        "optimizedDimensions": [
+          1200,
+          374
+        ],
+        "optimizedBytes": 59196,
+        "localFile": "et9.webp"
+      },
+      {
+        "model": "EC7",
+        "sourcePage": "https://www.nio.com/",
+        "modelPage": "https://www.nio.com/ec7",
+        "url": "https://cdn-public.nio.com/www-nio-cn/cdn-static/images/homepage/second-frame/second-frame-ec7-desktop.png",
+        "originalDimensions": [
+          2260,
+          880
+        ],
+        "dimensions": [
+          1970,
+          769
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "cropBox": [
+          159,
+          65,
+          2129,
+          834
+        ],
+        "optimizedDimensions": [
+          1200,
+          468
+        ],
+        "optimizedBytes": 70540,
+        "localFile": "ec7.webp"
+      }
+    ],
+    "logo": {
+      "url": "https://www.nio.cn/cdn-static/mynio/nextjs/images/icons/nio-logo-white.svg",
+      "dimensions": [
+        200,
+        188
+      ],
+      "localFile": "nio-logo.svg"
+    },
+    "retrievedAt": "2026-09-08"
+  },
+  "family-sources.json": {
+    "assets": [
+      {
+        "id": "firefly",
+        "brand": "firefly",
+        "imageSourcePage": "https://www.firefly.world/firefly",
+        "exactImageUrl": "https://cdn-up-public.firefly.world/www-firefly/cms/en_US/page_firefly_product/1753155230808-1753155230308-C1148C0A75B52F89.jpg",
+        "originalDimensions": [
+          2880,
+          1800
+        ],
+        "originalFormat": "JPEG",
+        "originalTransparent": false,
+        "outputDimensions": [
+          642,
+          344
+        ],
+        "webpBytes": 31906,
+        "view": "left-front three-quarter",
+        "dimensionsMm": {
+          "length": 4003,
+          "width": 1781,
+          "height": 1557,
+          "wheelbase": 2615
+        },
+        "dimensionSource": "https://cdn-up-public.firefly.com.cn/www-firefly-cn/user-instructions/FIREFLY/index.html",
+        "dimensionSourceLocation": "整车参数；长 A、宽 B（无外后视镜）、高 C、轴距 D",
+        "processing": [
+          "Downloaded original official CDN image from official product-page JSON.",
+          "Resized preserving aspect ratio to maximum 1400px width.",
+          "Non-generative OpenCV GrabCut segmentation with manually traced foreground constraints. Only alpha mask changed; original RGB vehicle appearance retained.",
+          "Cropped transparent outer margins; lightly antialiased alpha edges.",
+          "Removed residual ground shadow below firefly with manually traced lower edge; no vehicle repainting or synthesis."
+        ],
+        "limitations": "Official original is not transparent. This is a faithfully masked derivative; minor edge/ground-shadow remnants may remain.",
+        "localFile": "firefly.webp"
+      },
+      {
+        "id": "l60",
+        "brand": "ONVO",
+        "imageSourcePage": "https://www.onvo.cn/l60",
+        "exactImageUrl": "https://cdn-up-public.onvo.cn/www-alps-cn/www/l60/g1.6/soo/exterior/exterior-carousel-color-03-desktop.jpg",
+        "originalDimensions": [
+          2232,
+          1360
+        ],
+        "originalFormat": "JPEG",
+        "originalTransparent": false,
+        "outputDimensions": [
+          895,
+          396
+        ],
+        "webpBytes": 42484,
+        "view": "left-front three-quarter",
+        "dimensionsMm": {
+          "length": 4828,
+          "width": 1930,
+          "height": 1616,
+          "wheelbase": 2950
+        },
+        "dimensionSource": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L60-User-Manual-20251230.pdf",
+        "dimensionSourceLocation": "313 规格与参数 / 整车参数",
+        "processing": [
+          "Downloaded original official CDN image from official product-page JSON.",
+          "Resized preserving aspect ratio to maximum 1400px width.",
+          "Non-generative OpenCV GrabCut segmentation with manually traced foreground constraints. Only alpha mask changed; original RGB vehicle appearance retained.",
+          "Cropped transparent outer margins; lightly antialiased alpha edges.",
+          "Upper alpha boundary refined against the original image to remove background wedges; vehicle RGB and paint preserved."
+        ],
+        "limitations": "Official original is not transparent. This is a faithfully masked derivative; minor edge/ground-shadow remnants may remain.",
+        "localFile": "l60.webp",
+        "previousImageUrl": "https://cdn-up-public.onvo.cn/www-alps-cn/www/l60/g1.6/soo/exterior/exterior-carousel-color-01-desktop.jpg",
+        "paintName": "云霞紫",
+        "paintSourceLocation": "官网 __NEXT_DATA__ 外观颜色轮播 preview.title / desktop"
+      },
+      {
+        "id": "l90",
+        "brand": "ONVO",
+        "imageSourcePage": "https://www.onvo.cn/l90",
+        "exactImageUrl": "https://cdn-up-public.onvo.cn/www-alps-cn/www/l90/g1.3/exterior/exterior-carousel-color-07-desktop.jpg",
+        "originalDimensions": [
+          2232,
+          1360
+        ],
+        "originalFormat": "JPEG",
+        "originalTransparent": false,
+        "outputDimensions": [
+          911,
+          330
+        ],
+        "webpBytes": 34072,
+        "view": "left side",
+        "dimensionsMm": {
+          "length": 5145,
+          "width": 1998,
+          "height": 1786,
+          "wheelbase": 3110
+        },
+        "dimensionSource": "https://www.onvo.cn/l90",
+        "dimensionSourceLocation": "官网当前 __NEXT_DATA__ 结构化数据 PropertyValue：车长、车宽、车高、轴距；较早新闻列1766/1786mm，此处采用当前官网1786mm",
+        "processing": [
+          "Downloaded original official CDN image from official product-page JSON.",
+          "Resized preserving aspect ratio to maximum 1400px width.",
+          "Non-generative OpenCV GrabCut segmentation with manually traced foreground constraints. Only alpha mask changed; original RGB vehicle appearance retained.",
+          "Cropped transparent outer margins; lightly antialiased alpha edges.",
+          "Upper alpha boundary refined against the original image to remove background wedges; vehicle RGB and paint preserved."
+        ],
+        "limitations": "Official original is not transparent. This is a faithfully masked derivative; minor edge/ground-shadow remnants may remain.",
+        "localFile": "l90.webp",
+        "previousImageUrl": "https://cdn-up-public.onvo.cn/www-alps-cn/www/l90/g1.3/exterior/exterior-carousel-color-05-desktop.jpg",
+        "paintName": "静岳黑",
+        "paintSourceLocation": "官网 __NEXT_DATA__ 外观颜色轮播 preview.title / desktop"
+      }
+    ],
+    "retrievedAt": "2026-09-08"
+  }
+}

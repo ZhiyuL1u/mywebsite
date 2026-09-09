@@ -4,7 +4,7 @@ import GeometryScene from './components/GeometryScene.vue';
 import ProjectDeck from './components/ProjectDeck.vue';
 import {disciplines, education, profile, projects, type Project, type ProjectCategory} from './data/portfolio';
 
-const categories: Array<'All' | ProjectCategory> = ['All', 'Full stack', 'AI & data', 'Embedded'];
+const categories: Array<'All' | ProjectCategory> = ['All', 'Full stack', 'AI & data', 'Embedded', 'Interactive'];
 const selectedCategory = ref<(typeof categories)[number]>('All');
 const visibleProjects = computed(() => projects.filter(project =>
   selectedCategory.value === 'All' || project.category === selectedCategory.value,

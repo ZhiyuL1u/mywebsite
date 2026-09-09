@@ -1,4 +1,4 @@
-export type ProjectCategory = 'Full stack' | 'AI & data' | 'Embedded';
+export type ProjectCategory = 'Full stack' | 'AI & data' | 'Embedded' | 'Interactive';
 
 export interface ProjectLink {
   label: string;
@@ -77,6 +77,22 @@ export const education = [
 ];
 
 export const projects: Project[] = [
+  {
+    id: 'nio-vehicle-lab',
+    title: 'NIO Vehicle Lab',
+    subtitle: 'A car-shaped physics merging game',
+    category: 'Interactive',
+    image: new URL('../assets/project/nio-vehicle-lab.svg', import.meta.url).href,
+    summary: 'Drop, stack, and merge nine vehicles from firefly to ONVO and NIO. Distinct official car imagery meets a progressively tighter play area.',
+    technologies: ['JavaScript', 'Canvas 2D', 'Verlet physics', 'Web Audio'],
+    details: [
+      'Remastered the open-source melon-lab game from Ayi1337/gpt6-astra-one-shot-games, retaining its soft-body physics while introducing car-shaped collision outlines.',
+      'Designed a nine-level progression from firefly through ONVO to NIO, with increasing vehicle sizes, distinct official paint colors, and sustained-contact merging.',
+      'Added placement and merge sounds, a battery-swap assist, three physics modes, and mouse, keyboard, and touch controls.',
+      'Runs entirely in the browser with locally bundled assets. This is an independent project, not an official NIO game; vehicle imagery and trademarks belong to their respective owners.',
+    ],
+    links: [{label: 'Play game', url: '/niogame/'}, {label: 'Upstream project', url: 'https://github.com/Ayi1337/gpt6-astra-one-shot-games'}],
+  },
   {
     id: 'divebi',
     title: 'DiveBI',
