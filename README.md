@@ -50,3 +50,7 @@ Upstream: https://github.com/Ayi1337/gpt6-astra-one-shot-games. The game is an i
 ### Game update: 2026-09-09
 
 Nine official vehicle levels now lead to a tenth, AI-generated William Li cartoon portrait: ES9 + ES9 → William Li. Car height is increased by 25%, with floor friction 0.85 and vehicle friction 0.65. Merges require 0.4 seconds of low-speed continuous contact; new bodies become eligible at 0.45 seconds. Generation provenance is recorded with the asset sources.
+
+### Game update: 2026-09-10
+
+Restored vehicle height to its original ratio (1.0). Expanded the logical chamber from 640×720 to 688×774 and desktop frame maximum from 760px to 820px. Extended the overflow limit from 3 seconds to 8 seconds. Final portrait, friction, and 0.4-second merge delay are retained.

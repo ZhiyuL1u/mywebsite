@@ -88,7 +88,7 @@ export const projects: Project[] = [
     details: [
       'Remastered the open-source melon-lab game from Ayi1337/gpt6-astra-one-shot-games, retaining its soft-body physics while introducing car-shaped collision outlines.',
       'Designed nine vehicle levels from firefly through ONVO to NIO, followed by a cartoon portrait of William Li as the final merge reward.',
-      'Tuned taller car-shaped bodies and contact friction for more stable stacks, with a 0.4-second low-speed merge delay. Includes placement and merge sounds, battery-swap assistance, three physics modes, and mouse, keyboard, and touch controls.',
+      'Restored original vehicle proportions in a larger chamber, with contact friction, a 0.4-second low-speed merge delay, and an 8-second overflow allowance. Includes placement and merge sounds, battery-swap assistance, three physics modes, and mouse, keyboard, and touch controls.',
       'Runs entirely in the browser with locally bundled official vehicle imagery and an AI-generated cartoon portrait. This is an independent project, not an official NIO game; vehicle imagery and trademarks belong to their respective owners.',
     ],
     links: [{label: 'Play game', url: '/niogame/'}, {label: 'Upstream project', url: 'https://github.com/Ayi1337/gpt6-astra-one-shot-games'}],
