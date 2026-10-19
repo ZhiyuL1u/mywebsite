@@ -8,9 +8,13 @@
     "serve": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test:deck": "node scripts/check-project-deck.mjs"
+    "test:deck": "node scripts/check-project-deck.mjs",
+    "test:trading": "node --experimental-strip-types scripts/check-trading.mjs",
+    "test:ibkr": "node scripts/check-ibkr.mjs",
+    "sync:ibkr": "node scripts/sync-ibkr.mjs"
   },
   "dependencies": {
+    "fast-xml-parser": "^5.11.2",
     "three": "^0.185.1",
     "vue": "^3.5.42"
   },

@@ -1,0 +1,72 @@
+name: Sync public trading journal
+
+on:
+  schedule:
+    - cron: '30 12 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      from:
+        description: 'Optional backfill start (YYYY-MM-DD, no earlier than Day 0)'
+        required: false
+        type: string
+      to:
+        description: 'Optional backfill end (YYYY-MM-DD)'
+        required: false
+        type: string
+      daily_snapshots:
+        description: 'Request individual weekday snapshots (slow; backfill in small batches)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-trading-journal-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: ${{ vars.IBKR_SYNC_ENABLED == 'true' && vars.TRADING_PUBLIC_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    env:
+      IBKR_SYNC_ENABLED: ${{ vars.IBKR_SYNC_ENABLED }}
+      TRADING_PUBLIC_ENABLED: ${{ vars.TRADING_PUBLIC_ENABLED }}
+      TRADING_DAY_ZERO: ${{ vars.TRADING_DAY_ZERO || '2026-10-12' }}
+      TRADING_BASE_CURRENCY: ${{ vars.TRADING_BASE_CURRENCY || 'USD' }}
+      IBKR_REPORT_TIME_ZONE: ${{ vars.IBKR_REPORT_TIME_ZONE }}
+      IBKR_FLEX_TOKEN: ${{ secrets.IBKR_FLEX_TOKEN }}
+      IBKR_ACTIVITY_QUERY_ID: ${{ secrets.IBKR_ACTIVITY_QUERY_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run test:ibkr
+      - name: Read Activity Flex report
+        env:
+          BACKFILL_FROM: ${{ inputs.from }}
+          BACKFILL_TO: ${{ inputs.to }}
+          DAILY_SNAPSHOTS: ${{ inputs.daily_snapshots }}
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "$BACKFILL_FROM" ]]; then args+=(--from "$BACKFILL_FROM"); fi
+          if [[ -n "$BACKFILL_TO" ]]; then args+=(--to "$BACKFILL_TO"); fi
+          if [[ "$DAILY_SNAPSHOTS" == 'true' ]]; then args+=(--daily-snapshots); fi
+          node scripts/sync-ibkr.mjs "${args[@]}"
+      - name: Commit only the public projection
+        shell: bash
+        run: |
+          if git diff --quiet -- public/trading-data.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/trading-data.json
+          git commit -m 'chore: sync public trading diary'
+          git push
