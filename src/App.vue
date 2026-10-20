@@ -64,6 +64,7 @@ onBeforeUnmount(() => {
         <a href="#work">Work</a>
         <a href="#education">Journey</a>
         <a href="#contact">Contact</a>
+        <a href="/trading/">Trading ↗</a>
       </nav>
       <a class="header-link" :href="profile.github" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
     </header>

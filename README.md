@@ -1,6 +1,6 @@
 # Zhiyu Liu · Personal Portfolio
 
-Personal portfolio website for Zhiyu Liu, built with Vue 3, TypeScript, Vite, and Three.js. Includes an interactive geometry scene, personal introduction, ten projects with detailed notes, education, and contact links.
+Personal portfolio website for Zhiyu Liu, built with Vue 3, TypeScript, Vite, and Three.js. Includes an interactive geometry scene, personal introduction, eleven projects with detailed notes, education, and contact links.
 
 ## Development
 
@@ -54,3 +54,17 @@ Nine official vehicle levels now lead to a tenth, AI-generated William Li cartoo
 ### Game update: 2026-09-10
 
 Restored vehicle height to its original ratio (1.0). Expanded the logical chamber from 640×720 to 688×774 and desktop frame maximum from 760px to 820px. Extended the overflow limit from 3 seconds to 8 seconds. Final portrait, friction, and 0.4-second merge delay are retained.
+
+
+## Day Zero · 交易日记
+
+新增入口为 `/trading/`，同时出现在个人网站导航与项目卡片中。Vite 多页面构建会生成 `dist/trading/index.html`，与现有 Netlify 静态部署兼容。
+
+- 默认是按日展示的日记：日期选择、当日操作、券商逐笔已实现盈亏、逐笔交易笔记与当日复盘；「逐笔盈亏」可按盈利、亏损、待结算筛选并跳转当日日记。
+- `public/trading-data.json` 是公开发布的数据。当前仅包含 **2026-10-12 起**的授权记录；旧历史、账户号码、API 密钥与原始报表不在公开文件中。
+- 手动交易、交易笔记和日记目前保存在浏览器本机。可在「数据与连接」导出完整 JSON 备份；要跨设备公开这些记录，核对备份后替换公开 JSON 并通过项目构建发布。公开页面不提供匿名写入共享账本的接口。
+- 连接器快照与定时同步是不同的状态。当前快照可以展示真实记录；持续每日更新仍需配置 Flex。参见 [IBKR 接入说明](docs/trading-ibkr.md)。
+- 标准 CSV 支持交易导入、带符号佣金、期权实际成交总额与券商逐笔盈亏。期权缺少合约细节时不尝试按股票合并；当前持仓使用券商提供的合约快照。
+- 账户净值和现金直接来自快照。缺少完整入出金时不计算累计收益；当日已实现盈亏只汇总券商提供的逐笔值。历史现金缺失显示为空，不用 0 替代。
+
+验证：`npm run build`、`npm run test:trading`、`npm run test:ibkr`、`npm run test:deck`。

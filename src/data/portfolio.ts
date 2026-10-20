@@ -78,6 +78,21 @@ export const education = [
 
 export const projects: Project[] = [
   {
+    id: 'day-zero',
+    title: 'Day Zero',
+    subtitle: 'A daily trading journal',
+    category: 'Full stack',
+    image: new URL('../assets/project/day-zero.svg', import.meta.url).href,
+    summary: 'A personal trading diary: daily executions, brokerage snapshots, position follow-ups, and reflections from a chosen Day 0.',
+    technologies: ['Vue 3', 'TypeScript', 'SVG', 'IBKR Flex', 'GitHub Actions'],
+    details: [
+      'Groups each trading day into a journal page with execution details, broker-reported realized P&L, daily reflections, and per-trade notes.',
+      'Keeps simulated previews separate from published brokerage snapshots. Notes and manual entries are saved in the current browser and can be exported as a full journal backup.',
+      'Includes a read-only Flex report import and synchronization workflow. Automatic updates require server-side secrets and explicit publication configuration; the public journal starts on the selected Day 0.',
+    ],
+    links: [{label: 'Open journal', url: '/trading/'}, {label: 'Source code', url: 'https://github.com/ZhiyuL1u/mywebsite'}],
+  },
+  {
     id: 'nio-vehicle-lab',
     title: 'NIO Vehicle Lab',
     subtitle: 'A car-shaped physics merging game',
