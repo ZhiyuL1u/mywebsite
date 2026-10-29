@@ -22,11 +22,11 @@ try {
   assert.equal((html.match(/class="project-card/g) || []).length, projects.length);
   const layers = [...html.matchAll(/class="([^"]*deck-layer[^"]*)"/g)].map(match => match[1].split(/\s+/));
   assert.equal(layers.filter(classes => classes.includes('is-front')).length, 1);
-  assert.equal(layers.filter(classes => classes.includes('is-distant')).length, 5);
+  assert.equal(layers.filter(classes => classes.includes('is-distant')).length, 6);
   assert(html.includes('aria-roledescription="carousel"'));
   assert(html.includes('Bring Pennguys to the front'));
   assert.equal(state.activeProject.value.id, projects[0].id);
-  assert.deepEqual(state.cards.value.map(card => card.offset), [0, 1, 2, 3, 4, 5, -4, -3, -2, -1]);
+  assert.deepEqual(state.cards.value.map(card => card.offset), [0, 1, 2, 3, 4, 5, -5, -4, -3, -2, -1]);
 
   const capturedPointers = new Set();
   let focusCount = 0;
@@ -134,7 +134,7 @@ try {
   assert(css.includes('touch-action: pan-y pinch-zoom'));
   assert(css.includes('@media (prefers-reduced-motion: reduce)'));
   assert(css.includes('@media (max-width: 760px)'));
-  console.log('PASS: 10 project cards, circular navigation, keyboard opening, swipe suppression, vertical scroll, cancelation, filters, empty/single states, reduced-motion tilt, and responsive CSS hooks.');
+  console.log('PASS: 11 project cards, circular navigation, keyboard opening, swipe suppression, vertical scroll, cancelation, filters, empty/single states, reduced-motion tilt, and responsive CSS hooks.');
 } finally {
   await server.close();
 }
